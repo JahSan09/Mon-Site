@@ -1,0 +1,158 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jahson</title>
+
+  <style>css
+body {
+  background-color: #f0f8ff;      /* couleur de fond bleu clair */
+  font-family: Arial, sans-serif; /* police d’écriture */
+  color: #333333;                 /* couleur du texte */
+  margin: 20px;                   /* marge autour du contenu */
+}
+
+h1 {
+  color: #2e8b57;                /* titre en vert foncé */
+  text-align: center;            /* centre le titre */
+}
+
+p {
+  font-size: 18px;               /* taille du texte */
+  line-height: 1.6;              /* espacement entre les lignes */
+}
+
+
+    body {html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mon site Jahson</title>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Jahson</h1>
+    <p>Ceci est ma première page web.</p>
+  </body>
+</html>
+
+
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #2e8b57;
+    }
+    p {
+      font-size: 18px;
+    }
+    .btn {
+      background-color: #2e8b57;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .btn:hover {
+      background-color: #246b45;
+    }
+    img {
+      width: 200px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bienvenue sur mon site !</h1>
+  <p>Ceci est ma première page web avec image et lien.</p>
+
+  <img src="https://www.w3schools.com/html/img_chania.jpg" alt="Image exemple">
+
+  <br><br>
+  <a href="https://www.google.com" target="_blank" class="btn">Aller sur Google</a>
+</body>
+</html>
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mon premier site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #2e8b57;
+    }
+    p {
+      font-size: 18px;
+    }
+    .btn {
+      background-color: #2e8b57;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .btn:hover {
+      background-color: #246b45;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bienvenue sur mon site !</h1>
+  <p>Ceci est ma première page web avec du style.</p>
+  <a href="#" class="btn">Clique ici</a>
+</body>
+</html>
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mon premier site</title>
+</head>
+<body>
+  <h1>Bienvenue sur mon site !</h1>
+  <p>Ceci est ma première page web.</p>
+html
+<h2>Contacte-moi</h2>
+<form onsubmit="afficherInfos(event)">
+  <label for="nom">Nom :</label><br>
+  <input type="text" id="nom" required><br><br>
+
+  <label for="email">Email :</label><br>
+  <input type="email" id="email" required><br><br>
+
+  <label for="message">Message :</label><br>
+  <textarea id="message" rows="4" cols="30"></textarea><br><br>
+
+  <button type="submit">Envoyer</button>
+</form>
+
+<div id="resultat" style="margin-top: 20px; font-weight: bold;"></div>
+
+<script>
+  function afficherInfos(event) {
+    event.preventDefault(); // empêche l'envoi classique
+    const nom = document.getElementById("nom").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    document.getElementById("resultat").innerHTML =
+      "Nom : " + nom + "<br>Email : " + email + "<br>Message : " + message;
+  }
+</script>
+
+</body>
+</html>
+
